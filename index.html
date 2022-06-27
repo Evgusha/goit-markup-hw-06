@@ -63,6 +63,39 @@
                                 <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
                             </svg>
                           </baton>  
+
+                          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+                          <form>
+                            <div class="form-item">
+                                <label for="user-name" class="modal-text">Имя</label>
+                                <div class="input-icon"><input type="text" name="user-name" class="modal-input" required id="user-name"/>
+                                <svg class="modal-icon" width="18" height="18"><use href="./img/symbol-defs.svg#icon-person"></use></svg></div>
+                            </div>
+                            <div class="form-item">
+                                
+                                <label for="tel" class="modal-text">Телефон</label>
+                                <div class="input-icon"><input type="tel" name="tel" class="modal-input" required id="tel"/>
+                                <svg class="modal-icon" width="18" height="18"><use href="./img/symbol-defs.svg#icon-phone"></use></svg></div>
+                            </div>
+                            <div class="form-item">
+                                <label for="mail" class="modal-text">Почта</label>
+                                <div class="input-icon"><input type="email" name="mail" class="modal-input" required id="mail"/>
+                                <svg class="modal-icon" width="18" height="18"><use href="./img/symbol-defs.svg#icon-email"></use></svg></div>
+                            </div>
+                            <div class="form-coment">
+                                <label for="coment" class="modal-text">Комментарий</label>
+                                <textarea name="coment" placeholder="Введите текст" id="coment" class="modal-coment"></textarea>
+                            </div>
+                            
+                            <div class="galka-form">
+                                <input type="checkbox" id="galka" name="galka" value="true" class="check visually-hidden"/>
+                                <label for="galka" class="galka-text">Соглашаюсь с рассылкой и принимаю <a href="" class="link-dogovor"> Условия договора</a></label>
+                               
+                            </div>
+
+                             <button type="submit" class="submit" >Отправить</button>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -372,7 +405,13 @@
             
            
             </div>
-        </div>
+            <div class="footer-check">
+                <h2 class="footer-title">Подпишитесь на рассылку</h2>
+                <div class="footer-position">
+                    <input type="email" name="mail" placeholder="E-mail" class="footer-input"> 
+                    <button type="submit" class="footer-btn">Подписаться<svg class="footer-icon-btn" width="24" height="24"><use href="./img/symbol-defs.svg#icon-icon-send"></use></svg></button>
+                </div>
+            </div>
 
     </footer>
         
