@@ -149,7 +149,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    
+    cursor: pointer;
     display: block;
     align-items: center;
     text-align: center;
@@ -209,6 +209,7 @@ body {
     border-radius: 4px;
     outline: none;
     padding: 12px 42px;
+    margin-top: 4px;
 }
 .form-item {
   margin-bottom: 10px;  
@@ -220,7 +221,7 @@ body {
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    /* margin-bottom: 25px; */
+    margin-top: 4px;
     padding: 12px 16px;
     height: 120px;
     resize: none;
@@ -253,6 +254,7 @@ body {
     border: 2px solid #212121;
     border-radius: 3px;
     margin-right: 8px;
+    margin-left: 12px;
 }
 
 .check:checked + .galka-text::before {
@@ -309,6 +311,11 @@ margin-left: 4px;
     margin-right: 124px;
     margin-top: 30px;
     transform: translateY(-50%);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
 }
 
 
@@ -327,6 +334,10 @@ margin-left: 4px;
 }
 .icon-close {
     fill:#000000;
+    transition: fill 250ms ease;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
 }
 .icon-close:hover, .icon-close:focus {
     fill: var(--accent-color);
@@ -715,22 +726,23 @@ margin-left: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 29px;
+    border: none;
+    position: relative;
+    display: flex;
+    cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    border-color: none;
-    position: relative;
-    /* align-items: center; */
-display: flex;
 }
+
 .footer-icon-btn {
     fill: #FFFFFF;
     margin-left: 10px;
     position: absolute;
-    right: 19px;
+    right: 28px;
     
 }
 
@@ -757,6 +769,7 @@ display: flex;
     margin-right: 8px;
     padding: 6px 22px;
     transition: background-color, color, box-shadow, border-color, 250ms ease;
+    cursor: pointer;
     
 }
 .filtr-btn:hover, .filtr-btn:focus {
